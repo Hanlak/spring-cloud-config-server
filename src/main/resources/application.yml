@@ -1,0 +1,18 @@
+server:
+  port: 8888
+
+management:
+  security:
+    enabled: false
+spring:
+  cloud:
+    config:
+      server:
+        git:
+          uri: https://github.com/Hanlak/config-store-spring
+          username: hanlak
+          password: kosaski14
+          search-paths:
+            - '*practice'
+          cloneOnStart: false
+
